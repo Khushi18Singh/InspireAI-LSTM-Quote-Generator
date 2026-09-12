@@ -7,7 +7,7 @@
 
 A Deep Learning powered NLP web app that generates original, inspirational quotes word-by-word using a custom-trained **LSTM (Long Short-Term Memory) Neural Network**, packaged into a full multi-tool creative studio built with **Streamlit**.
 
-🔗 **Live Demo:** _(add your Streamlit deployment link here once deployed)_
+🔗 **Live Demo:** https://khushi-inspireai-quote-generator.streamlit.app/
 
 ---
 
