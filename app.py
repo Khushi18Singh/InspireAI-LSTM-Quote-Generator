@@ -218,37 +218,76 @@ def get_theme_css(theme_name):
     div[data-testid="stDownloadButton"] > button,
     div[data-testid="stFormSubmitButton"] > button,
     .stDownloadButton > button,
-    button[data-testid="stBaseButton-secondary"] {
+    button[data-testid="stBaseButton-secondary"],
+    button[kind="secondary"],
+    button[data-baseweb="button"] {
         border-radius: 14px !important;
         font-weight: 700 !important;
         padding: 0.6rem 1.2rem !important;
         background: #ffffff !important;
-        color: #1e293b !important;
-        -webkit-text-fill-color: #1e293b !important;
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-text-fill-color: #0f172a !important;
         border: 1.5px solid #cbd5e1 !important;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    .stButton > button *,
+    div[data-testid="stButton"] > button *,
+    div[data-testid="stDownloadButton"] > button *,
+    div[data-testid="stFormSubmitButton"] > button *,
+    .stDownloadButton > button *,
+    button[data-testid="stBaseButton-secondary"] *,
+    button[kind="secondary"] * {
+        color: #0f172a !important;
+        -webkit-text-fill-color: #0f172a !important;
     }
 
     .stButton > button:hover,
     div[data-testid="stButton"] > button:hover,
     div[data-testid="stDownloadButton"] > button:hover,
     div[data-testid="stFormSubmitButton"] > button:hover,
-    .stDownloadButton > button:hover {
+    .stDownloadButton > button:hover,
+    button[data-testid="stBaseButton-secondary"]:hover,
+    button[kind="secondary"]:hover {
         background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+        background-color: #4f46e5 !important;
         border-color: #4f46e5 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3) !important;
+    }
+
+    .stButton > button:hover *,
+    div[data-testid="stButton"] > button:hover *,
+    div[data-testid="stDownloadButton"] > button:hover *,
+    div[data-testid="stFormSubmitButton"] > button:hover *,
+    .stDownloadButton > button:hover *,
+    button[data-testid="stBaseButton-secondary"]:hover * {
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
     }
 
     div[data-testid="stButton"] > button[kind="primary"],
     div[data-testid="stDownloadButton"] > button[kind="primary"],
-    button[data-testid="stBaseButton-primary"] {
+    button[data-testid="stBaseButton-primary"],
+    button[kind="primary"] {
         background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%) !important;
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
         font-weight: 800 !important;
         border-radius: 14px !important;
         border: none !important;
+        box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35) !important;
+    }
+
+    div[data-testid="stButton"] > button[kind="primary"] *,
+    div[data-testid="stDownloadButton"] > button[kind="primary"] *,
+    button[data-testid="stBaseButton-primary"] *,
+    button[kind="primary"] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
     }
 
     /* Reset Stats Button Red Danger Styling for Light Mode */
@@ -452,15 +491,90 @@ def get_theme_css(theme_name):
     .official-author { font-weight: 800; font-size: 1.15rem; letter-spacing: 2px; color: #38bdf8 !important; text-transform: uppercase; margin-top: 1rem; }
     .official-handle { font-size: 0.88rem; color: #93c5fd !important; margin-top: 6px; font-weight: 500; }
 
+    /* All Buttons & Download Buttons for Dark Mode */
+    .stButton > button,
+    div[data-testid="stButton"] > button,
+    div[data-testid="stDownloadButton"] > button,
+    div[data-testid="stFormSubmitButton"] > button,
+    .stDownloadButton > button,
+    button[data-testid="stBaseButton-secondary"],
+    button[kind="secondary"],
+    button[data-baseweb="button"] {
+        border-radius: 14px !important;
+        font-weight: 700 !important;
+        padding: 0.6rem 1.2rem !important;
+        background: rgba(30, 41, 59, 0.9) !important;
+        background-color: rgba(30, 41, 59, 0.9) !important;
+        color: #f8fafc !important;
+        -webkit-text-fill-color: #f8fafc !important;
+        border: 1.5px solid rgba(56, 189, 248, 0.4) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    .stButton > button *,
+    div[data-testid="stButton"] > button *,
+    div[data-testid="stDownloadButton"] > button *,
+    div[data-testid="stFormSubmitButton"] > button *,
+    .stDownloadButton > button *,
+    button[data-testid="stBaseButton-secondary"] *,
+    button[kind="secondary"] * {
+        color: #f8fafc !important;
+        -webkit-text-fill-color: #f8fafc !important;
+    }
+
+    .stButton > button:hover,
+    div[data-testid="stButton"] > button:hover,
+    div[data-testid="stDownloadButton"] > button:hover,
+    div[data-testid="stFormSubmitButton"] > button:hover,
+    .stDownloadButton > button:hover,
+    button[data-testid="stBaseButton-secondary"]:hover,
+    button[kind="secondary"]:hover {
+        background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%) !important;
+        background-color: #0284c7 !important;
+        border-color: #38bdf8 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4) !important;
+    }
+
+    .stButton > button:hover *,
+    div[data-testid="stButton"] > button:hover *,
+    div[data-testid="stDownloadButton"] > button:hover *,
+    div[data-testid="stFormSubmitButton"] > button:hover *,
+    .stDownloadButton > button:hover *,
+    button[data-testid="stBaseButton-secondary"]:hover * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
     div[data-testid="stButton"] > button[kind="primary"],
     div[data-testid="stDownloadButton"] > button[kind="primary"],
-    button[data-testid="stBaseButton-primary"] {
+    button[data-testid="stBaseButton-primary"],
+    button[kind="primary"] {
         background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%) !important;
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
         font-weight: 800 !important;
         border: 1px solid #38bdf8 !important;
         border-radius: 14px !important;
+        box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4) !important;
+    }
+
+    div[data-testid="stButton"] > button[kind="primary"] *,
+    div[data-testid="stDownloadButton"] > button[kind="primary"] *,
+    button[data-testid="stBaseButton-primary"] *,
+    button[kind="primary"] * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    .stButton > button:disabled,
+    div[data-testid="stButton"] > button:disabled,
+    button[disabled] {
+        opacity: 0.55 !important;
+        cursor: not-allowed !important;
+        box-shadow: none !important;
     }
 
     /* Reset Stats Button Red Danger Styling for Dark Mode */
@@ -536,13 +650,6 @@ def get_theme_css(theme_name):
         padding: 8px 18px !important;
     }
     """
-
-    if "Light" in theme_name:
-        return f"<style>{light_css}</style>"
-    elif "Dark" in theme_name:
-        return f"<style>{dark_css}</style>"
-    else:  # System Default (Auto OS setting)
-        return f"<style>{light_css}\n@media (prefers-color-scheme: dark) {{\n{dark_css}\n}}</style>"
 
     if "Light" in theme_name:
         return f"<style>{light_css}</style>"
