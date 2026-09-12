@@ -90,9 +90,9 @@ A Deep Learning powered NLP web app that generates original, inspirational quote
 
 ## 🖼️ Application Preview
 
-![App Screenshot](screenshot.png)
-
-> Add a screenshot of your running app here — save it as `screenshot.png` in the project root, and it will automatically render above once pushed to GitHub.
+| AI Studio — Quote Generation | Poster Studio | Deep Learning Model Lab |
+|---|---|---|
+| ![AI Studio](screenshot1.png) | ![Poster Studio](screenshot2.png) | ![DL Model Lab](screenshot3.png) |
 
 ---
 
